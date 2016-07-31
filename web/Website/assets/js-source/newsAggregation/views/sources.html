@@ -17,13 +17,13 @@
 </details>
 
 <main class="article-listing" ng-init="$ctrl.populateArticles()">
-  <section class="article" ng-repeat="article in $ctrl.articles">
-    <a ng-href="{{ article.url }}" target="blank">
-      <h1 class="article__header">{{ article.title }}</h1>
-    </a>
+  <a ng-href="{{ article.url }}" class="article" target="blank" ng-repeat="article in $ctrl.articles">
+    <section>
+        <h1 class="article__header">{{ article.title }}</h1>
 
-    <p class="article__description">{{ article.description }}</p>
+      <p class="article__description">{{ article.description }}</p>
 
-    <cite class="article__autor">{{ article.author }}</cite>
-  </section>
+      <cite class="article__author">{{ article.author }}</cite>
+    </section>
+  </a>
 </main>

@@ -3,11 +3,33 @@
   flex-wrap: wrap;
   margin-top: 46px;
   justify-content: flex-start;
+  align-items: baseline;
 }
 
 .article {
-  flex-basis: 350px;
+  background: #fff;
+  border: 1px solid #eee;
+  color: inherit;
+  flex-basis: 275px;
   flex-shrink: 1;
-  flex-grow: 0;
+  flex-grow: 1;
+  font-size: 0.875rem;
   padding: 15px;
+  margin: 15px;
+  text-decoration: none;
+
+  &__header {
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-bottom: 0.875rem;
+  }
+
+  &__description {
+    margin-bottom: 0.875rem;
+  }
+
+  &__author {
+    font-weight: bold;
+    font-size: 0.9375rem;
+  }
 }

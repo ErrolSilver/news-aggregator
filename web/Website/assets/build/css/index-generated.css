@@ -48,8 +48,18 @@ q:before, q:after {
 blockquote, q {
   quotes: "" ""; }
 
+body {
+  background: #fafafa;
+  color: #202020;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.2; }
+
 .navigation {
-  background: beige;
+  background: #00897B;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  color: #fff;
   position: fixed;
   top: 0;
   width: 100%; }
@@ -69,22 +79,24 @@ blockquote, q {
   padding: 15px; }
 
 .source {
-  -ms-flex-preferred-size: 150px;
-      flex-basis: 150px;
+  -ms-flex-preferred-size: 170px;
+      flex-basis: 170px;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 15px; }
+  padding: 10px;
+  text-align: center; }
   .source input {
     display: none; }
   .source label {
     cursor: pointer;
+    border-radius: 2px;
     display: inline-block;
     padding: 15px; }
   .source input:checked + label {
-    background: gray; }
+    background: #4DB6AC; }
 
 .article-listing {
   display: -webkit-box;
@@ -95,16 +107,39 @@ blockquote, q {
   margin-top: 46px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
 
 .article {
-  -ms-flex-preferred-size: 350px;
-      flex-basis: 350px;
+  background: #fff;
+  border: 1px solid #eee;
+  color: inherit;
+  -ms-flex-preferred-size: 275px;
+      flex-basis: 275px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  padding: 15px; }
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 15px;
+  margin: 15px;
+  text-decoration: none; }
+  .article__header {
+    font-weight: 300;
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    margin-bottom: 0.875rem; }
+  .article__description {
+    margin-bottom: 14px;
+    margin-bottom: 0.875rem; }
+  .article__author {
+    font-weight: bold;
+    font-size: 15px;
+    font-size: 0.9375rem; }
 
 /*# sourceMappingURL=index-generated.css.map */

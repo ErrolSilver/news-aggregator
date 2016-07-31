@@ -5,10 +5,11 @@
 }
 
 .source {
-  flex-basis: 150px;
+  flex-basis: 170px;
   flex-grow: 0;
   flex-shrink: 0;
-  padding: 15px;
+  padding: 10px;
+  text-align: center;
 
   input {
     display: none;
@@ -16,11 +17,12 @@
 
   label {
     cursor: pointer;
+    border-radius: 2px;
     display: inline-block;
     padding: 15px;
   }
 
   input:checked + label {
-    background: gray;
+    background: #4DB6AC;
   }
 }
