@@ -1,0 +1,13 @@
+.article-listing {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 46px;
+  justify-content: flex-start;
+}
+
+.article {
+  flex-basis: 350px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  padding: 15px;
+}

@@ -1,0 +1,26 @@
+.source-listing {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.source {
+  flex-basis: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 15px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px;
+  }
+
+  input:checked + label {
+    background: gray;
+  }
+}

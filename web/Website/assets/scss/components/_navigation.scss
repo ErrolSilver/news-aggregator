@@ -1,0 +1,16 @@
+.navigation {
+  background: beige;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__trigger {
+    cursor: pointer;
+    height: 46px;
+    padding: 15px;
+  }
+
+  &__loading {
+    float: right;
+  }
+}

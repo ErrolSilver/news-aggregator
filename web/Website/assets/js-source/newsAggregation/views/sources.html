@@ -1,0 +1,29 @@
+<details role="navigation" class="navigation">
+  <summary class="navigation__trigger">Sources <span class="navigation__loading" ng-if="$ctrl.loading">loading</span></summary>
+  <ul class="source-listing">
+    <li class="source" ng-repeat="source in $ctrl.sources">
+      <input type="checkbox"
+        id="{{source.id}}"
+        name="selectedSources[]"
+        value="{{source.id}}"
+        ng-checked="$ctrl.sourcesSelection.indexOf(source.id) > -1"
+        ng-click="$ctrl.getArticles(source.id)"
+      > 
+      <label for="{{source.id}}">
+        {{source.name}}
+      </label>
+    </li>
+  </ul>
+</details>
+
+<main class="article-listing" ng-init="$ctrl.populateArticles()">
+  <section class="article" ng-repeat="article in $ctrl.articles">
+    <a ng-href="{{ article.url }}" target="blank">
+      <h1 class="article__header">{{ article.title }}</h1>
+    </a>
+
+    <p class="article__description">{{ article.description }}</p>
+
+    <cite class="article__autor">{{ article.author }}</cite>
+  </section>
+</main>
